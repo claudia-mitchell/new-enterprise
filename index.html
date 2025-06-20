@@ -21,11 +21,16 @@
 
 <body class="load-in">
 
-    <nav>
-        <a href="onboarding1.html">
-            <button class="next-button" id="loadin">Next Page</button>
-        </a>
-    </nav>
+    <button id="goNext" style="padding: 14px 28px; background: #2f31f5; color: white; border: none; font-size: 16px; cursor: pointer;">
+        Go to Onboarding
+      </button>
+    
+      <script>
+        document.getElementById("goNext").addEventListener("click", function () {
+          console.log("Button clicked"); // log test
+          window.location.href = "pages/onboarding1.html";
+        });
+      </script>
 
     <img class="squiggle" id="squiggle-1" src="assets/squiggle-1.svg" alt="squiggle-1">
     <img class="squiggle" id="squiggle-2" src="assets/squiggle-2.svg" alt="squiggle-2">
