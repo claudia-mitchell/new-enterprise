@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --sumit-black: #131313;
+    --sumit-white: #FCFCF5;
+    --dark-blue: #2F31F5;
+    --light-blue: #BCE3D1;
+    --sumit-pink: #F76F8E;
+}
+
+
+
+body.load-in {
+    background-color: var(--sumit-black);
+}
+
+.svg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    background-color: transparent;
+    /* or set a backdrop if needed */
+}
+
+.svg-overlay img {
+    width: 60vw;
+    /* Scales with screen size */
+    height: auto;
+    /* Keeps aspect ratio */
+    max-width: 150px;
+    /* Optional cap for large screens */
+}
+
+@media (max-width: 400px) {
+    .svg-overlay img {
+      width: 80vw;
+    }
+  }
+  
