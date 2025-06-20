@@ -93,6 +93,99 @@ body.load-in {
     right: 200px;
 }
 
+body.onboarding .headline {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+body.onboarding .next-button {
+    background-color: #2f31f5;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    width: 100px;
+    margin: 200px auto 40px;
+    display: block;
+}
+
+.headline {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "K2D", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+
+    font-family: "K2D", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.tagline {
+    display: inline-block;
+    margin-bottom: 30px;
+    background-color: #fddde4;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #6a0032;
+    font-family: "K2D", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    
+}
+
+.dots {
+    margin-bottom: 30px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.4;
+}
+
+.dot.active {
+    background-color: #2f31f5;
+    opacity: 1;
+}
+
+.next-button {
+    padding: 14px 30px;
+    color: white;
+    border: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "K2D", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+    
+}
+
+#loadin {
+    color: #131313;
+}
+
+
 @media (max-width: 400px) {
     .svg-overlay img {
         width: 80vw;
