@@ -22,6 +22,14 @@ body.load-in {
     background-color: var(--sumit-black);
 }
 
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .svg-overlay {
     position: fixed;
     top: 0;
@@ -43,13 +51,49 @@ body.load-in {
     /* Scales with screen size */
     height: auto;
     /* Keeps aspect ratio */
-    max-width: 150px;
+    max-width: 200px;
     /* Optional cap for large screens */
+}
+
+#squiggle-1 {
+    position: absolute;
+    right: 100px;
+    left: -20px;
+}
+
+#squiggle-2 {
+    position: absolute;
+    top: 100px;
+    right: -20px;
+}
+
+#squiggle-3 {
+    position: absolute;
+    top: 400px;
+    right: 0px;
+}
+
+#squiggle-4 {
+    position: absolute;
+    right: 100px;
+    left: -10px;
+    top: 550px;
+}
+
+#squiggle-5 {
+    position: absolute;
+    top: 700px;
+    right: 0px;
+}
+
+#squiggle-6 {
+    position: absolute;
+    bottom: 0px;
+    right: 200px;
 }
 
 @media (max-width: 400px) {
     .svg-overlay img {
-      width: 80vw;
+        width: 80vw;
     }
-  }
-  
+}
